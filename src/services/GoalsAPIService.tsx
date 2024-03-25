@@ -1,7 +1,7 @@
-import { SellerModel } from "../models/SellerModel";
+import { GoalModel } from "../models/GoalModel";
 
 const apiBaseURL = "http://localhost:9003/"
-export function getAllSellerAPI(){
+export function getAllGoalsAPI(){
     return fetch(apiBaseURL+"seller"
     ,{
           method:"GET",
@@ -9,9 +9,9 @@ export function getAllSellerAPI(){
       }
         );
 }
-//export function postSomeSeller(){
-export function postSellerAPI(data:SellerModel){
-    return fetch(apiBaseURL+"seller", {
+
+export function postGoalAPI(data:GoalModel){
+    return fetch(apiBaseURL+"goal", {
         method:"POST",
         mode:"cors",
         headers:{"Content-Type":"application/json"},

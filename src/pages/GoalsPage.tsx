@@ -1,11 +1,11 @@
 import React from "react";
-import { SellerList } from "../components/SellerList";
-import { getAllSellerAPI, postSellerAPI } from "../services/SellerAPIService";
+//import { SellerList } from "../components/SellerList";
+import { getAllGoalsAPI, postGoalAPI } from "../services/GoalsAPIService";
 import { useEffect, useState } from "react";
-import { SellerModel } from "../models/SellerModel";
-import { AddSeller } from "../components/AddSeller";
+import { GoalModel } from "../models/GoalModel";
+import { AddGoal } from "../components/AddGoal";
 
-export function SellerPage(){
+export function GoalsPage(){
 
 /*    function logAllSeller(){
         getAllSellerAPI()
@@ -21,8 +21,8 @@ export function SellerPage(){
     */
     return (
     <>
-    <SellerList></SellerList>
-    <AddSeller></AddSeller>
+    {/* <GoalList></GoalList> */}
+    <AddGoal></AddGoal>
 
     </>
         )
